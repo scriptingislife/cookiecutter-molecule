@@ -1,5 +1,4 @@
-{% raw %}
----
+{% raw %}---
 # This is an example playbook to execute goss tests.
 # Tests need distributed to the appropriate ansible host/groups
 # prior to execution by `goss validate`.
@@ -27,7 +26,7 @@
       retries: 3
 
     - name: Copy Goss tests to remote
-      copy:
+      template:
         src: "{{ item }}"
         dest: "{{ goss_test_directory }}/{{ item | basename }}"
       with_fileglob:

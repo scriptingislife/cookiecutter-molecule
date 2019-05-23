@@ -1,7 +1,7 @@
-Role Name
+{{cookiecutter.role_name}}
 =========
 
-A brief description of the role goes here.
+{{cookiecutter.description}}
 
 Requirements
 ------------
@@ -34,7 +34,7 @@ passed in as parameters) is always nice for users too:
 
     - hosts: servers
       roles:
-         - { role: my_role, x: 42 }
+         - { role: {{cookiecutter.role_name}}, x: 42 }
 
 License
 -------
