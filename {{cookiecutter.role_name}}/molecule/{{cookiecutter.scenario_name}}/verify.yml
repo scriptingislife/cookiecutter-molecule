@@ -1,4 +1,4 @@
-{%raw %}
+{% raw %}
 ---
 # This is an example playbook to execute goss tests.
 # Tests need distributed to the appropriate ansible host/groups
