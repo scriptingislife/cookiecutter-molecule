@@ -28,7 +28,7 @@
     - name: Copy Goss tests to remote
       copy:
         src: "{{ item }}"
-        dest: "{{ goss_test_directory }}/{{ item | basename }}"
+        dest: {%raw %}"{{ goss_test_directory }}/{{ item | basename }}"{% endraw %}
       with_fileglob:
         - "{{ lookup('env', 'MOLECULE_VERIFIER_TEST_DIRECTORY') }}/test_*.yml"
 
