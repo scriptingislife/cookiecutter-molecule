@@ -12,3 +12,4 @@ Generated from Molecule version `2.20.0`
   * Operating system specific goss files are only run on the correct platform. See `test_debian.yml` and `test_redhat.yml`.
 * `ansible-lint` ignores warnings for `meta/main.yml`
 * Contains two instances - Ubuntu 16.04 and CentOS 7
+  * Ubuntu includes an example forwarded port
