@@ -11,7 +11,10 @@ None.
 Role Variables
 --------------
 
-None.
+```
+my_var
+  42 - Creates 42 gold coins.
+```
 
 Dependencies
 ------------
@@ -28,4 +31,4 @@ Example Playbook
 Author Information
 ------------------
 
-Me! @github
+{{ cookiecutter.author }} @github
