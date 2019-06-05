@@ -1,7 +1,6 @@
 {
     "role_name": "test_role",
-    "scenario_name": "default",
     "author": "your name",
-    "description": "your description",
-    "company": "your company (optional)"
+    "github_username": "mygithub",
+    "description": "your description"
 }

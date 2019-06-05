@@ -31,4 +31,4 @@ Example Playbook
 Author Information
 ------------------
 
-{{ cookiecutter.author }} @github
+{{ cookiecutter.author }} @{{ cookiecutter.github_username }}
