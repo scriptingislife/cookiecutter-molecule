@@ -5,6 +5,6 @@
     "description": "your description",
     "_copy_without_render": [
         "*.j2",
-        "verify.yml"
+        "*verify.yml"
     ]
 }
