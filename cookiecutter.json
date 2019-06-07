@@ -2,5 +2,9 @@
     "role_name": "test_role",
     "author": "your name",
     "github_username": "mygithub",
-    "description": "your description"
+    "description": "your description",
+    "_copy_without_render": [
+        "*.j2",
+        "verify.yml"
+    ]
 }
