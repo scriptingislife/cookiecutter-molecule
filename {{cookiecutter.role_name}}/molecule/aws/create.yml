@@ -92,7 +92,7 @@
         instance_conf_dict: {
           'instance': "{{ item.instances[0].tags.instance }}",
           'address': "{{ item.instances[0].public_ip }}",
-          'user': "{{ ssh_user }}",
+          'user': "{{ item._ansible_item_label.item.ssh_user }}",
           'port': "{{ ssh_port }}",
           'identity_file': "{{ keypair_path }}",
           'instance_ids': "{{ item.instance_ids }}", }
@@ -120,6 +120,6 @@
         timeout: 320
       with_items: "{{ lookup('file', molecule_instance_config) | molecule_from_yaml }}"
 
-    - name: Wait for boot process to finish
-      pause:
-        minutes: 2
+    #- name: Wait for boot process to finish
+    #  pause:
+    #    minutes: 2
