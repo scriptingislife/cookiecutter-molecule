@@ -6,6 +6,6 @@ jobs:
       - image: circleci/python:3.7.3
     steps:
       - run: sudo pip install molecule cookiecutter
-      - run: cookiecutter --default-config gh:becksteadn/cookiecutter-molecule
+      - run: cookiecutter --no-input gh:becksteadn/cookiecutter-molecule
       - run: cd test_role
       - run: molecule lint
