@@ -7,5 +7,4 @@ jobs:
     steps:
       - run: sudo pip install cookiecutter molecule
       - run: cookiecutter --no-input gh:becksteadn/cookiecutter-molecule
-      - run: cd test_role
-      - run: molecule lint
+      - run: cd test_role && molecule lint
