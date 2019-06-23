@@ -1,5 +1,7 @@
 ## cookiecutter-molecule
 
+[![CircleCI](https://circleci.com/gh/becksteadn/cookiecutter-molecule.svg?style=svg)](https://circleci.com/gh/becksteadn/cookiecutter-molecule)
+
 A Molecule role with my personal preferences and modifications.
 
 Generated from Molecule version `2.20.0`
